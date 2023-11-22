@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="ime" content="Klara">
+  <meta name="description" content="osnove html-a i css-a">
+  <meta name="viewpoint" content="width=device-width, initial-scale=1">
+  <title>Naslovnica</title>
+  <style>
+    body {
+  height: 100px;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+.header {
+  background-color: rgb(6, 6, 83);
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin: 0;
+}
+.navigation {
+  background-color: rgb(86, 160, 206);
+  float: left;
+  width: 140px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+.navigation ul {
+  padding: 0;
+  text-align: center;
+}
+.navigation li {
+  margin: 0;
+  padding: 12px 0;
+}
+.navigation li a {
+  display: block;
+  padding: 12px 24px;
+  border-radius: 8px;
+  margin: 5px auto;
+  color: white;
+  background-color: rgb(86, 160, 206);
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+.navigation li a:hover {
+  background-color: rgb(152, 147, 147);
+  transform: translateY(-3px); 
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2)
+}
+.main-content {
+  margin-left: 140px;
+  padding: 20px;
+  background-color: white;
+  flex: 1;
+}
+.main-content p {
+  text-align: left;
+}
+.main-content h1 {
+  text-align: center;
+  padding-right: 140px; 
+}
+.slika {
+  float: right;
+  width: 100px;
+  margin-left: 20px;
+  margin-top: -60px;
+  margin-bottom:10px;
+}
+.main-content table {
+  float: right;
+  margin-right: 20px;
+  margin-top: -20px; 
+}
+.footer {
+  position: static;
+  bottom: 0;
+  width: 100%;
+  background-color: gray;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  flex-shrink: 0;
+}
+html {
+  background-color: rgb(86, 160, 206);
+}
+table {
+    border-collapse: collapse;
+    width: 30%; 
+    margin: 10px auto; 
+  }
+
+  th, td {
+    border: 1px solid black;
+    padding: 5px; 
+    text-align: center;
+  }
+
+  th {
+    background-color: rgb(6, 6, 83);
+    color: white;
+  }
+
+@media screen and (max-width: 768px) {
+  .slika {
+    float: none;
+    width: 100%; 
+    margin: 0 auto 10px; 
+    display: block; 
+    clear: both; 
+    max-width: 100%; 
+    margin-top: 0; 
+  }
+
+  .main-content table {
+    float: none;
+    margin: 10px auto; 
+  }
+  body {
+    height: auto; 
+  }
+  .navigation {
+    float: none;
+    width: 100%;
+    margin-bottom: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .navigation ul {
+    padding: 0;
+    text-align: center;
+  }
+
+  .navigation li {
+    margin: 0;
+    padding: 12px 0;
+  }
+
+  .navigation li a {
+    display: block;
+    padding: 12px 24px;
+    border-radius: 8px;
+    margin: 5px auto;
+    color: white;
+    background-color: rgb(86, 160, 206);
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  .navigation li a:hover {
+    background-color: rgb(152, 147, 147);
+    transform: translateY(-3px);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+  }
+}
+  </style>
+</head>
+<body>
+  <header class="header">
+    
+    <h1>FSRE</h1>
+  
+  </header>
+  <nav class="navigation">
+   
+    <ul>
+      <li><a href="https://fsre.sum.ba/">Početna</a></li>
+      <li><a href="https://fsre.sum.ba/o-fakultetu">O fakultetu</a></li>
+      <li><a href="https://fsre.sum.ba/upisi">Upisi</a></li>
+      <li><a href="https://fsre.sum.ba/kontakt">Kontakt</a></li>
+    </ul>
+  </nav>
+  <main class="main-content">
+    <h1>Smjerovi</h1>
+    <h2>Računarstvo</h2>
+    <p>Računarstvo obrazuje stručnjake sposobne prilagođavanju stalnim promjenama u području programskog inženjerstva,<br> što obuhvaća davanje potrebnih osnova iz svih područja računalne tehnike i tehnologije.<br> Cilj je razviti sposobnosti softverskog projektiranja, primjene i korištenja računalnih znanosti i informacijskih tehnologija <br>u kreiranju najnovijih tržišno održivih rješenja.</p>
+    <h3>Strojarstvo</h3>
+    <p>Strojarstvo je orijentirano stvaranju novih vrijednosti i po tome je jedno od rijetkih područja koja omogućuju funkcioniranje<br> i razvitak svake zajednice. Danas je napredak u tehnici isključivo rezultat znanstveno istraživačkog rada i razvoja,<br> temeljenog na vještom domišljanju novih idejnih rješenja.
+    </p>
+    <h4>Elektrotehnika</h4>
+    <p>Elektrotehnika daje fokus na osposobljavanje za rad u različitim područjima elektrotehničkog inženjerstva koji uključuju <br>integraciju softverskih, hardverskih i procesnih rješenja. Cilj je razviti sposobnosti automatizacije postrojenja i procesa,<br> ali i kreiranje održivosti elektroenergetskih mreža i strojeva.
+    </p>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsXx0ubKMlr_Fbv1KMEZmhbAzku03nZtAFkPIJJgkDSBznL0gH0JAI5hd91a_MWyWEdfA&usqp=CAU" alt="Logo" class="slika">
+    
+    <table >
+      <tr>
+        <th>Računarstvo</th>
+        <th>Strojarstvo</th>
+        <th>Elektrotehnika</th>
+      </tr>
+      <tr>
+        <td>1 godina</td>
+        <td>2 godina</td>
+        <td>3 godina</td>
+      </tr>
+    </table>
+ 
+    <p>Posjeti <a href="https://studomat.sum.ba/">ISS</a></p>
+  </main>
+ 
+  <footer class="footer">
+   
+    &copy; FSRE <p>Author: Klara Šarac | <a href="mailto:klara.sarac@fsre.sum.ba">Contact Author</a></p>
+  </footer>
+</body>
+</html>
